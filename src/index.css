@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "EB Garamond", Georgia, serif;
+  --font-sans: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  font-family: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #050608;
+  color: #F4F6F8;
+  overflow-x: hidden;
+}
+
+.font-editorial {
+  font-family: "EB Garamond", Georgia, serif;
+}
+
+.font-interface {
+  font-family: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Custom hairline borders and transitions conforming to 200ms cubic-bezier(0.16, 1, 0.3, 1) */
+.transition-editorial {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-duration: 200ms;
+}
+
+/* Subtle film grain or calibrated reference monitor texture without glassmorphism */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050608;
+}
+::-webkit-scrollbar-thumb {
+  background: #1B2B38;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0F2A3F;
+}
